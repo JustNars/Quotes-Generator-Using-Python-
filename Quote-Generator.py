@@ -56,7 +56,7 @@ def main():
 
             message = Notification(app_id="Nihal's Quote Generator!", title="Quote Of The Day!",
                                         msg=f"{data['quoteText']} — {data['quoteAuthor']}", duration="long",
-                                            icon=f"C:\\Users\\Windows\\Documents\\QUO IMAGES\\{random.choice(listof_imgs)}")
+                                            icon=f"QUO IMAGES\\{random.choice(listof_imgs)}")
             message.set_audio(audio.LoopingAlarm3, loop=False)
             message.show()
             
